@@ -1,0 +1,13 @@
+_G.autoDings = false;
+while _G.autoDings == true do
+local args = {
+  [1] = "BuyItem",
+  [2] = "Soul Cane"
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+  
+  wait()
+end
+
